@@ -26,7 +26,31 @@ function same(arr1, arr2) {
 
   return true;
 }
+
+
 var arr1 = [2, 2, 1,3];
 var arr2 = [4, 4, 1,9];
 var res = same(arr1, arr2);
 console.log(res);
+
+let map = new Map();
+let arr = [1,2,4,5,6,1,3,4,6,9,10];
+for(let item of arr){
+    if(!map.has(item)){
+        map.set(item,1)
+    }
+    else{
+        map.set(item,map.get(item)+1)
+    }
+}
+console.log(map)
+
+// map.set("a",1)
+// map.set("b",1)
+// console.log(map.get("a"))
+// // set
+// //get
+// //has
+// //delete
+// //size
+// console.log(map.size)
