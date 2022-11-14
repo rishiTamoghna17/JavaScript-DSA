@@ -13,8 +13,8 @@ var lengthOfLongestSubstring = function(s) {
             map.delete(s[i])
             i++
         }
-        console.log(map)
     }
+    return max
 };
 var s = "abcabcdefghibejklmnopqrstuvwxyz"
 var res =lengthOfLongestSubstring(s)
